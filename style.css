@@ -1,0 +1,149 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+ width: 1728px;
+ height: 1117px;
+ margin: 0 auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sideBarText {
+  grid-column: 1 / 2;
+}
+
+.sideBarImg {
+  grid-column: 2 / 3;
+}
+
+/* ------ menu ----------*/
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerContainer .menu nav {
+  margin-right: 6rem;
+  margin-top: 4rem;
+}
+.headerContainer .menu nav ul{
+  display: flex;
+  list-style: none;
+  gap: 5rem;
+}
+
+.headerContainer .menu nav li {
+  font-size: 1.rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.headerContainer .menu nav li:hover {
+  color: orange;
+}
+
+.logo  {
+  margin-left: 4rem;
+  margin-top: 2.8rem;
+}
+/* ------------- Fim menu -------------*/
+
+/* ------------- Edição do texto ------------- */
+
+.sideBarText {
+  margin-top: 12rem;
+  margin-left: 5rem;
+}
+
+.sideBarText article {
+  display: flex;
+  flex-direction: column;
+}
+
+.sideBarText article h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  width: 32rem;
+}
+
+.sideBarText article h1 strong {
+  color: #FC9A03;
+}
+
+.sideBarText article p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 42rem;
+  text-align: justify;
+}
+
+.sideBarText article a {
+  align-self: center;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  background-color: #FC9A03;
+  border-radius: 5rem;
+  padding: 2rem 9rem;
+}
+/*------------- Fim Edição do texto ------------- */
+
+/*------------- Edição do Produto --------------- */
+
+.sideBarImg {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #FC9A03;
+}
+
+.sideBarImg .fanta{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.sideBarImg .fanta .fantaImgContainer {
+  border: 1px solid black;
+  width: 665px;
+  height: 665px;
+}
+.sideBarImg .redeSociais{
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+  margin-right: 2.5rem;
+}
+
+
+/*------------- Fim da Edição do Produto --------------- */
+
+/* ------------- Edição de imagens ------------- */
+.logo img{
+  width: 11rem;
+  height: 8rem;
+}
+
+.redeSociais img {
+  width: 2rem;
+  height: 2rem;
+}
+.fantaProduto {
+  width: 41rem;
+  height: 41rem;
+}
+
+.laranjasFundo {
+  width: 19rem;
+  height: 19rem;
+}
