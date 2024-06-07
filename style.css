@@ -1,18 +1,13 @@
-body {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 .wrapper {
- width: 1728px;
- height: 1117px;
+ width: 108rem;
+ height: 70rem;
  margin: 0 auto;
 }
 
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 0rem;
 }
 
 .sideBarText {
@@ -21,6 +16,7 @@ body {
 
 .sideBarImg {
   grid-column: 2 / 3;
+
 }
 
 /* ------ menu ----------*/
@@ -37,7 +33,6 @@ body {
 .headerContainer .menu nav ul{
   display: flex;
   list-style: none;
-  gap: 5rem;
 }
 
 .headerContainer .menu nav li {
@@ -46,8 +41,17 @@ body {
   padding: 1rem;
 }
 
-.headerContainer .menu nav li:hover {
-  color: orange;
+.headerContainer .menu nav li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: var(--orange-900);
+  margin-top: 5px;
+}
+
+.headerContainer .menu nav li:hover::after {
+  width: 100%;
 }
 
 .logo  {
@@ -66,6 +70,7 @@ body {
 .sideBarText article {
   display: flex;
   flex-direction: column;
+  gap: 3rem;
 }
 
 .sideBarText article h1 {
@@ -75,7 +80,7 @@ body {
 }
 
 .sideBarText article h1 strong {
-  color: #FC9A03;
+  color: var(--orange-900);
 }
 
 .sideBarText article p {
@@ -91,8 +96,8 @@ body {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  color: white;
-  background-color: #FC9A03;
+  color: var(--white);
+  background-color: var(--orange-900);
   border-radius: 5rem;
   padding: 2rem 9rem;
 }
@@ -104,20 +109,42 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  background-color: #FC9A03;
+  overflow: hidden
 }
 
-.sideBarImg .fanta{
-  display: flex;
+.sideBarImg .circle {
+  background-color: var(--orange-900);
+  width: 86rem;
+  height: 58rem;
+  border-radius: 100%;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 30%);
+}
+
+.sideBarImg .fanta {
   width: 100%;
-  justify-content: space-between;
+  height: 100%;
+  position: relative;
 }
 
-.sideBarImg .fanta .fantaImgContainer {
-  border: 1px solid black;
-  width: 665px;
-  height: 665px;
+
+.sideBarImg .fantaProduto {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 5%;
 }
+
+.sideBarImg .laranjasFundo {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  right: 16%;
+}
+
 .sideBarImg .redeSociais{
   display: flex;
   flex-direction: column;
@@ -139,7 +166,7 @@ body {
   height: 2rem;
 }
 .fantaProduto {
-  width: 41rem;
+  width: 40rem;
   height: 41rem;
 }
 
